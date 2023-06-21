@@ -1,4 +1,3 @@
-require("febert")
 
 if vim.g.vscode then
 		-- VSCode extension
@@ -11,7 +10,8 @@ if vim.g.vscode then
 	vim.api.nvim_set_keymap('n', '<Tab>', ':Tabnext<CR>', { noremap = true }) 
 	vim.api.nvim_set_keymap('n', '<S-Tab>', ':Tabprev<CR>', { noremap = true })
 else
-    -- ordinary Neovim
+	-- ordinary Neovim
+	require("febert")
 end
 
 vim.g.mapleader = " "

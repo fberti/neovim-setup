@@ -1,1 +1,2 @@
-print("hello from febert")
+require("febert.packer")
+print("hello")
